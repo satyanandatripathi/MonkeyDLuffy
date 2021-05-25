@@ -83,6 +83,12 @@ Join my 👒 Straw hats pirate crew 👒 by adding me to your group.
 Press /help to see all the commands and how they work!
 
 """
+buttons = [
+    [
+        InlineKeyboardButton(text="ℹ️ABOUT", callback_data="saitama_"),
+    ],
+]
+
 
 HELP_STRINGS = """
 Hey there! My name is *{}*[.](https://telegra.ph/file/5d1b138d269cb22820b99.mp4) 
@@ -247,6 +253,7 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                     ]
+
                 ),
             )
     else:
